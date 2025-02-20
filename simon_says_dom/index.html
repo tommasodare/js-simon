@@ -22,16 +22,23 @@
     <p id="instructions">Memorizza i numeri entro il tempo limite!</p>
 
     <!-- Numbers -->
-    <ul id="numbers-list" class="d-flex gap-5 list-unstyled"></ul>
+    <ul id="numbers-list" class="d-flex gap-5 list-unstyled">
+      <li class="num_one">Number</li>
+      <li class="num_two">Number</li>
+      <li class="num_three">Number</li>
+      <li class="num_four">Number</li>
+      <li class="num_five">Number</li>
+    </ul>
+
 
     <!-- Form -->
-    <form id="answers-form" class="">
+    <form id="answers-form" class="d-none">
       <div class="d-flex gap-5" id="input-group">
-        <input type="number" class="form-control num_one" min="1" max="50" required>
-        <input type="number" class="form-control num_two" min="1" max="50" required>
-        <input type="number" class="form-control num_three" min="1" max="50" required>
-        <input type="number" class="form-control num_four" min="1" max="50" required>
-        <input type="number" class="form-control num_five" min="1" max="50" required>
+        <input type="number" class="form-control" min="1" max="50" required>
+        <input type="number" class="form-control" min="1" max="50" required>
+        <input type="number" class="form-control" min="1" max="50" required>
+        <input type="number" class="form-control" min="1" max="50" required>
+        <input type="number" class="form-control" min="1" max="50" required>
       </div>
       <button class="btn btn-primary mt-2 d-block mx-auto">Conferma</button>
       <p class="text-danger text-center" id="message"></p>
