@@ -10,8 +10,8 @@ function randomNumber() {
 
 // Seleziono gli elementi DOM
 
-const numerslistEl = document.getElementById("number_list")
-const formEl = document.getElementById("answer_form")
+const numberslistEl = document.getElementById("numbers-list")
+const formEl = document.getElementById("answers-form")
 const btnEl = document.querySelector(".btn")
 const numoneEl = document.querySelector(".num_one")
 const numtwoEl = document.querySelector(".num_two")
@@ -25,3 +25,10 @@ numtwoEl.innerText = randomNumber()
 numthreeEl.innerText = randomNumber()
 numfourEl.innerText = randomNumber()
 numfiveEl.innerText = randomNumber()
+
+// Attivo il timer di 30 secondi
+
+setTimeout(function(){
+    formEl.classList.remove("d-none")
+    numberslistEl.classList.add("d-none")
+}, 5000)
