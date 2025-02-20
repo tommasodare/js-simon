@@ -2,3 +2,23 @@
 Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
  */
 
+// Far apparire 5 numeri in pagina
+
+function randomNumber() {
+    return Math.floor(Math.random()*100)
+}
+
+// Selezionare gli elementi DOM
+
+const numoneEl = document.getElementById("number_one")
+const numtwoEl = document.getElementById("number_two")
+const numthreeEl = document.getElementById("number_three")
+const numfourEl = document.getElementById("number_four")
+const numfiveEl = document.getElementById("number_five")
+
+
+numoneEl.innerHTML = randomNumber()
+numtwoEl.innerHTML = randomNumber()
+numthreeEl.innerHTML = randomNumber()
+numfourEl.innerHTML = randomNumber()
+numfiveEl.innerHTML = randomNumber()
